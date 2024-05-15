@@ -4,6 +4,7 @@ import { DashboardPage } from './components/pages/DashboardPage';
 import { JournalPage } from './components/pages/JournalPage';
 import { SettingsPage } from './components/pages/SettingsPage';
 import { Header } from './components/layout/Header';
+import './assets/styles/main.scss';
 
 function App() {
   return (
