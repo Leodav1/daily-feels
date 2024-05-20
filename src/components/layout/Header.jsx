@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Header = () => (
   <header>
     <nav>
-      <Link to="/dashboard">Dashboard</Link>
       <Link to="/journal">Journal</Link>
-      <Link to="/settings">Settings</Link>
+      <br></br>
+      <Link to="/asistant">Asistant</Link>
     </nav>
+    <br></br>
   </header>
 );
