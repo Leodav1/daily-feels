@@ -1,20 +1,22 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { LoginPage } from './components/pages/LoginPage';
-import { DashboardPage } from './components/pages/DashboardPage';
-import { JournalPage } from './components/pages/JournalPage';
-import { SettingsPage } from './components/pages/SettingsPage';
-import { Header } from './components/layout/Header';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Journal from "./components/pages/journal";
+import { Header } from "./components/layout/Header";
+import "./assets/styles/main.scss";
+import Asistant from "./components/pages/assistant";
 
 function App() {
   return (
     <Router>
-      <Header /> 
+      <Header />
       <Routes>
         <Route path="/" element={<Navigate replace to="/dashboard" />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/journal" element={<JournalPage />} />
-        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/journal" element={<Journal />} />
+        <Route path="/asistant" element={<Asistant />} />
       </Routes>
     </Router>
   );
